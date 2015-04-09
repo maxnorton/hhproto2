@@ -80,8 +80,8 @@
 	var navigation = $(".navigation");
 	var body = $('body')
 
-	body.on("scroll", function(e) {
-	    
+	$(document).on("scroll", body, function(e) {
+	    console.log('Event fired');
 	  if (this.scrollTop > 147) {
 	    navigation.addClass("fix-navigation");
 	  } else {
