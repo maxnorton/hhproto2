@@ -28,7 +28,7 @@
 
 			jQuery(document).on("scroll", body, function(e) {
 			    console.log('Event fired');
-			  if (this.scrollTop > 147) {
+			  if (body.scrollTop > 147) {
 			    navigation.addClass("fix-navigation");
 			  } else {
 			    navigation.removeClass("fix-navigation");
