@@ -13,6 +13,30 @@
 		 
 		<?php wp_head(); ?>
 	
+		<script class="text/javascript">
+
+		$(document).ready(function() {
+			console.log('Event -1');
+			$(document).on('scroll', function(e) {
+				cosole.log('Event 0');
+			});
+		});
+
+			var navigation = $(".navigation");
+			var body = $('body')
+
+			$(document).on("scroll", body, function(e) {
+			    console.log('Event fired');
+			  if (this.scrollTop > 147) {
+			    navigation.addClass("fix-navigation");
+			  } else {
+			    navigation.removeClass("fix-navigation");
+			  }
+			  
+			});
+		</script>
+
+
 	</head>
 	
 	<body <?php body_class(); ?>>
