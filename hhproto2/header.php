@@ -75,7 +75,7 @@
 						
 						</div>
 
-						<div>
+						<div class="nav-post-title-wrap">
 							<h1 class="nav-post-title"><?php wp_title('|', true, 'right'); ?></h1>
 						</div>
 						

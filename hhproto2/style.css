@@ -186,6 +186,19 @@
 	
 	.archive-nav { margin-top: 60px; }
 
+
+.nav-post-title-wrap {
+	width:50%;
+	display: inline;
+}
+
 .nav-post-title {
-	
+	padding-top: 19px;
+	display: inline-block;
+	color: #FFF;
+	padding-left: 20px;
+}
+
+.fix-navigation {
+	position: fixed;
 }
