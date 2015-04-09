@@ -76,7 +76,7 @@
 						</div>
 
 						<div>
-							<h1 class="post-title"><?php wp_title('|', true, 'right'); ?></h1>
+							<h1 class="nav-post-title"><?php wp_title('|', true, 'right'); ?></h1>
 						</div>
 						
 						<div class="search-toggle toggle">
