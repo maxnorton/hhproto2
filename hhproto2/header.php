@@ -15,6 +15,7 @@
 	
 		<script class="text/javascript">
 
+		console.log('add least this is being read');
 		$(document).ready(function() {
 			console.log('Event -1');
 			$(document).on('scroll', function(e) {
