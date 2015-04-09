@@ -11,3 +11,10 @@
  Tags:         
  Text Domain:  hhproto2
 */
+
+	.blog-menu { display: none; }
+	
+	.toggle-container { 
+		display: block; 
+		background: #1D1D1D;
+	}
