@@ -30,6 +30,7 @@
 			    console.log(html.scrollTop());
 			  if (html.scrollTop() > 352) {
 			  	console.log('scrolltop working');
+			  	jQuery('.navigation').addClass('fix-navigation');
 			    navigation.addClass("fix-navigation");
 			  } else {
 			    navigation.removeClass("fix-navigation");
