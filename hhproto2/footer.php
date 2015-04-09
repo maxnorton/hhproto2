@@ -77,6 +77,13 @@
 <?php wp_footer(); ?>
 
 <script class="text/javascript">
+
+$(document).ready(function() {
+	$(document).on('scroll', function(e) {
+		cosole.log('Event 0');
+	});
+});
+
 	var navigation = $(".navigation");
 	var body = $('body')
 
