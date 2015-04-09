@@ -79,6 +79,7 @@
 <script class="text/javascript">
 
 $(document).ready(function() {
+	console.log('Event -1');
 	$(document).on('scroll', function(e) {
 		cosole.log('Event 0');
 	});
