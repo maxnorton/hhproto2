@@ -24,11 +24,11 @@
 		});
 
 			var navigation = jQuery(".navigation");
-			var body = jQuery('body')
+			var html = jQuery("html");
 
 			jQuery(document).on("scroll", body, function(e) {
-			    console.log(jQuery("html").scrollTop());
-			  if (body.scrollTop() > 147) {
+			    console.log(html.scrollTop());
+			  if (html.scrollTop() > 352) {
 			  	console.log('scrolltop working');
 			    navigation.addClass("fix-navigation");
 			  } else {
