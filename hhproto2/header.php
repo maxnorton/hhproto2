@@ -18,15 +18,15 @@
 		console.log('add least this is being read');
 		jQuery(document).ready(function() {
 			console.log('Event -1');
-			$(document).on('scroll', function(e) {
+			jQuery(document).on('scroll', function(e) {
 				cosole.log('Event 0');
 			});
 		});
 
-			var navigation = $(".navigation");
-			var body = $('body')
+			var navigation = jQuery(".navigation");
+			var body = jQuery('body')
 
-			$(document).on("scroll", body, function(e) {
+			jQuery(document).on("scroll", body, function(e) {
 			    console.log('Event fired');
 			  if (this.scrollTop > 147) {
 			    navigation.addClass("fix-navigation");
