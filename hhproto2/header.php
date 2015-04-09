@@ -26,7 +26,7 @@
 			var navigation = jQuery(".navigation");
 			var html = jQuery("html");
 
-			jQuery(document).on("scroll", body, function(e) {
+			jQuery(document).on("scroll", html, function(e) {
 			    console.log(html.scrollTop());
 			  if (html.scrollTop() > 352) {
 			  	console.log('scrolltop working');
