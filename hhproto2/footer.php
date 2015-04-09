@@ -78,8 +78,9 @@
 
 <script class="text/javascript">
 	var navigation = $(".navigation");
+	var body = $('body')
 
-	navigation.on("scroll", function(e) {
+	body.on("scroll", function(e) {
 	    
 	  if (this.scrollTop > 147) {
 	    navigation.addClass("fix-navigation");
