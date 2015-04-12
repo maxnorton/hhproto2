@@ -19,7 +19,7 @@
 		jQuery(document).ready(function() {
 			console.log('Event -1');
 			jQuery(document).on('scroll', function(e) {
-				cosole.log('Event 0');
+				console.log('Event 0');
 			});
 		});
 
