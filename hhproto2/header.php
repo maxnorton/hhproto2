@@ -15,16 +15,15 @@
 	
 		<script class="text/javascript">
 
-		console.log('add least this is being read');
 		jQuery(document).ready(function() {
-			var big-wrapper = jQuery(".big-wrapper");
+			var bigwrapper = jQuery(".big-wrapper");
 			var html = jQuery(window);
 
 			jQuery(document).on("scroll", html, function(e) {
 			  if (html.scrollTop() > 352) {
-			  	jQuery('.big-wrapper').addClass('fix-navigation');
+			  	bigwrapper.addClass('fix-navigation');
 			  } else {
-			    jQuery('.big-wrapper').removeClass('fix-navigation');
+			    bigwrapper.removeClass('fix-navigation');
 			  }
 			});
 		});
