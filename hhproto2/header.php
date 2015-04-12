@@ -23,7 +23,7 @@
 			});
 
 			var navigation = jQuery(".navigation");
-			var html = jQuery("html, body");
+			var html = jQuery("body");
 
 			console.log('vars set');
 
