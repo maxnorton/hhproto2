@@ -17,25 +17,15 @@
 
 		console.log('add least this is being read');
 		jQuery(document).ready(function() {
-			console.log('Event -1');
-			jQuery(document).on('scroll', function(e) {
-				console.log('Event 0');
-			});
-
 			var navigation = jQuery(".navigation");
 			var html = jQuery(window);
 
-			console.log('vars set');
-
 			jQuery(document).on("scroll", html, function(e) {
-			    console.log(html.scrollTop());
 			  if (html.scrollTop() > 352) {
-			  	console.log('scrolltop working');
 			  	jQuery('.navigation').addClass('fix-navigation');
 			  } else {
 			    jQuery('.navigation').removeClass('fix-navigation');
 			  }
-			  
 			});
 		});
 		</script>
