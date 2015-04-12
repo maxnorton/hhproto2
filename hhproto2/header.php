@@ -27,7 +27,7 @@
 
 			console.log('vars set');
 
-			jQuery(document).on("scroll", navigation, function(e) {
+			jQuery(document).on("scroll", jQuery('html'), function(e) {
 			    console.log(html.scrollTop());
 			  if (html.scrollTop() > 352) {
 			  	console.log('scrolltop working');
