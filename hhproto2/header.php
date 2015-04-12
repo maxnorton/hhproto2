@@ -21,7 +21,6 @@
 			jQuery(document).on('scroll', function(e) {
 				console.log('Event 0');
 			});
-		});
 
 			var navigation = jQuery(".navigation");
 			var html = jQuery("html");
@@ -36,6 +35,7 @@
 			  }
 			  
 			});
+		});
 		</script>
 
 
