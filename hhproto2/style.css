@@ -204,6 +204,7 @@
 .fix-navigation > .navigation {
 	position: fixed;
 	top: 0;
+	z-index: 9;
 }
 
 .fix-navigation > .wrapper {
