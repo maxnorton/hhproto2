@@ -109,7 +109,9 @@
 	.search-toggle.active .handle { background: #FFF; }
 	
 	.blog-search,
-	.navigation { background: #282828; }
+	.navigation { 
+		background: #282828;
+		width: 100%; }
 	
 	.mobile-menu a {
 		display: block;
@@ -201,4 +203,5 @@
 
 .fix-navigation {
 	position: fixed;
+	top: 0;
 }
