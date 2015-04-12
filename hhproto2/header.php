@@ -25,6 +25,8 @@
 			var navigation = jQuery(".navigation");
 			var html = jQuery("html");
 
+			console.log('vars set');
+
 			jQuery(document).on("scroll", html, function(e) {
 			    console.log(html.scrollTop());
 			  if (html.scrollTop() > 352) {
