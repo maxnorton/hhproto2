@@ -201,7 +201,11 @@
 	padding-left: 20px;
 }
 
-.fix-navigation {
+.fix-navigation > .navigation {
 	position: fixed;
 	top: 0;
+}
+
+.fix-navigation > .wrapper {
+	margin-top: 157px; /*add 57px*/
 }

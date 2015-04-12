@@ -17,14 +17,14 @@
 
 		console.log('add least this is being read');
 		jQuery(document).ready(function() {
-			var navigation = jQuery(".navigation");
+			var big-wrapper = jQuery(".big-wrapper");
 			var html = jQuery(window);
 
 			jQuery(document).on("scroll", html, function(e) {
 			  if (html.scrollTop() > 352) {
-			  	jQuery('.navigation').addClass('fix-navigation');
+			  	jQuery('.big-wrapper').addClass('fix-navigation');
 			  } else {
-			    jQuery('.navigation').removeClass('fix-navigation');
+			    jQuery('.big-wrapper').removeClass('fix-navigation');
 			  }
 			});
 		});
