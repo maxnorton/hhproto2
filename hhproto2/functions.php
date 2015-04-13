@@ -7,4 +7,8 @@ function theme_enqueue_styles() {
         array('parent-style')
     );
 }
+
+// register theme widgets
+require_once (get_template_directory() . "/widgets/recent-posts.php");
+
 ?>
