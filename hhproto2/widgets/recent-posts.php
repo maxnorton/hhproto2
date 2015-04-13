@@ -54,7 +54,7 @@ class hhproto2_recent_posts extends WP_Widget {
 								
 									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 										
-										if ( has_post_thumbnail() ) : ?>
+										<?php if ( has_post_thumbnail() ) : ?>
 
 											<div class="post-icon">
 												
