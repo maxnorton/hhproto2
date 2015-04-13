@@ -19,7 +19,7 @@ class hhproto2_recent_posts extends WP_Widget {
 		$number_of_posts = null; 
 		
 		$widget_title = esc_attr(apply_filters('widget_title', $instance['widget_title']));
-		$number_of_posts = esc_attr($instance['number_of_posts']);*/
+		$number_of_posts = esc_attr($instance['number_of_posts']);
 		
 		echo $before_widget;
 		
@@ -112,13 +112,13 @@ class hhproto2_recent_posts extends WP_Widget {
 			
 				</ul>
 				
-			<?php endif; ?>*/
+			<?php endif; ?>
 					
-		<?php echo $after_widget; 
+		<?php echo $after_widget; */
 	}
 	
 	
-	function update($new_instance, $old_instance) {
+	/*function update($new_instance, $old_instance) {
 		$instance = $old_instance;
 		
 		$instance['widget_title'] = strip_tags( $new_instance['widget_title'] );
@@ -153,6 +153,6 @@ class hhproto2_recent_posts extends WP_Widget {
 		</p>
 		
 		<?php
-	}
-}
+	}*/
+
 register_widget('hhproto2_recent_posts'); */ ?>
