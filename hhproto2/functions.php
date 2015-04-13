@@ -16,5 +16,5 @@ function hhproto2_unregister_default_widgets() {
 add_action('widgets_init', 'hhproto2_unregister_default_widgets');
 
 // register theme widgets
-require_once (get_template_directory() . "/widgets/recent-posts.php");
+require_once (get_stylesheet_directory() . "/widgets/recent-posts.php");
 ?>
