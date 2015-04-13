@@ -1,4 +1,3 @@
-<p>Here's the recent posts widget.</p>
 <?php 
 
 //h/t to andersnoren.se, on whose lovecraft theme this widget is based
