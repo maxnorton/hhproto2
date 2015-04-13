@@ -6,8 +6,6 @@ class hhproto2_recent_posts extends WP_Widget {
 	function hhproto2_recent_posts() {
 		parent::WP_Widget(false, $name = __('Recent Posts', 'hhproto2'), array('description' => __('Displays recent blog entries.', 'hhproto2') ));	
 	}
-
-}
 	
 	function widget($args, $instance) {
 	
@@ -153,5 +151,6 @@ class hhproto2_recent_posts extends WP_Widget {
 		
 		<?php
 	}*/
+}
 
 register_widget('hhproto2_recent_posts'); ?>
