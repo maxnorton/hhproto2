@@ -48,50 +48,22 @@ class hhproto2_recent_posts extends WP_Widget {
 							<?php global $post; ?>
 						
 							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-									
-								<div class="post-icon">
-								
+																	
 									<?php 
 										$post_format = get_post_format(); 
 										if ( empty($post_format) ) { $post_format = 'standard'; }
 									?>
 									
 									<?php if ( has_post_thumbnail() ) : ?>
+
+										<div class="post-icon">
 									
-										<?php the_post_thumbnail('thumbnail') ?>
+											<?php the_post_thumbnail('thumbnail') ?>
 									
-									<?php elseif ( $post_format == 'gallery' ) : ?>
-								
-										<?php
-											$attachment_parent = get_the_ID();
-						
-											if($images = get_posts(array(
-												'post_parent'    => $attachment_parent,
-												'post_type'      => 'attachment',
-												'numberposts'    => 1,
-												'post_status'    => null,
-												'post_mime_type' => 'image',
-										                'orderby'        => 'menu_order',
-										                'order'           => 'ASC',
-											))) { ?>
-							
-											<?php foreach($images as $image) { 
-												$attimg = wp_get_attachment_image($image->ID, 'thumbnail'); ?>
-												
-												<?php echo $attimg; ?>
-												
-											<?php } ?>
-											
-										<?php } ?>
-										
-									<?php else : ?>
-									
-										<div class="genericon genericon-<?php echo $post_format; ?>"></div>
-									
+										</div>
+
 									<?php endif; ?>
-									
-								</div>
-								
+																	
 								<div class="inner">
 												
 									<p class="title"><?php the_title(); ?></p>
