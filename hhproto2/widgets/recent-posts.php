@@ -95,7 +95,6 @@ class hhproto2_recent_posts extends WP_Widget {
 								<div class="inner">
 												
 									<p class="title"><?php the_title(); ?></p>
-									<p class="meta"><?php the_time(get_option('date_format')); ?></p>
 								
 								</div>
 								
