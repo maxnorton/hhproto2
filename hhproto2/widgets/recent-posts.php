@@ -52,17 +52,21 @@ class hhproto2_recent_posts extends WP_Widget {
 									<?php 
 										$post_format = get_post_format(); 
 										if ( empty($post_format) ) { $post_format = 'standard'; }
+
+										if ( $post_format != 'aside') : ?>
+									
+											<?php if ( has_post_thumbnail() ) : ?>
+
+												<div class="post-icon">
+											
+													<?php the_post_thumbnail('thumbnail') ?>
+											
+												</div>
+
+											<?php endif;
+
+										endif;
 									?>
-									
-									<?php if ( has_post_thumbnail() ) : ?>
-
-										<div class="post-icon">
-									
-											<?php the_post_thumbnail('thumbnail') ?>
-									
-										</div>
-
-									<?php endif; ?>
 																	
 								<div class="inner">
 												
