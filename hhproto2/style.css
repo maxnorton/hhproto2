@@ -185,6 +185,8 @@
 	@import url(1000px.css);
 }
 
+
+/* Fixed nav bar ------------------------- */
 .nav-post-title-wrap {
 	width:50%;
 	display: inline;
@@ -214,5 +216,20 @@
 	margin: 5px 15px 5px 0;
 	overflow: hidden;
 	width: 110px;
+}
+
+/* Post titles overlaid on featured images ----------------- */
+.header-over-image {
+	background-color: #1D1D1D;
+	background-color: rgba(150,150,150,0.7);
+	bottom: 10px;
+	padding: 10px;
+	position: absolute;
+}
+
+.featured-media .header-over-image a,
+.featured-media .header-over-image .date-sep {
+	display: auto;
+	color: white;
 }
 
