@@ -4,11 +4,13 @@
 
 class hhproto2_recent_posts_pretty extends WP_Widget {
 
-	function hhproto2_recent_posts() {
+	function hhproto2_recent_posts_pretty() {
 		parent::WP_Widget(false, $name = __('Recent Posts - Pretty', 'hhproto2'), array('description' => __('Displays recent blog entries.', 'hhproto2') ));	
 	}
 
 }
+
+register_widget('hhproto2_recent_posts_pretty');
 /*
 	
 	function widget($args, $instance) {
