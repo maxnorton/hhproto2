@@ -1,11 +1,10 @@
 <?php 
-
-/*h/t to andersnoren.se, on whose lovecraft theme this widget is based*/
+// h/t to andersnoren.se, on whose lovecraft theme this widget is entirely based
 
 class hhproto2_recent_posts extends WP_Widget {
 
 	function hhproto2_recent_posts() {
-		parent::WP_Widget(false, $name = __('Recent Posts - Pretty', 'hhproto2'), array('description' => __('Displays recent blog entries.', 'hhproto2') ));	
+		parent::WP_Widget(false, $name = __('Recent Posts', 'hhproto2'), array('description' => __('Displays recent blog entries.', 'hhproto2') ));	
 	}
 
 }
@@ -155,4 +154,4 @@ class hhproto2_recent_posts extends WP_Widget {
 		<?php
 	}*/
 
-register_widget('hhproto2_recent_posts'); */ ?>
+register_widget('hhproto2_recent_posts'); ?>
