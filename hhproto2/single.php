@@ -72,10 +72,6 @@
 								
 							<span class="post-author"><?php the_author_posts_link(); ?></span>
 							
-							<span class="date-sep"> / </span>
-							
-							<?php comments_popup_link( '<span class="comment">' . __( '0 Comments', 'hemingway' ) . '</span>', __( '1 Comment', 'hemingway' ), __( '% Comments', 'hemingway' ) ); ?>
-							
 							<?php if ( current_user_can( 'manage_options' ) ) { ?>
 							
 								<span class="date-sep"> / </span>
@@ -99,12 +95,6 @@
 					<div class="clear"></div>
 					
 					<div class="post-meta-bottom">
-																		
-						<p class="post-categories"><span class="category-icon"><span class="front-flap"></span></span> <?php the_category(', '); ?></p>
-						
-						<?php if( has_tag()) { ?><p class="post-tags"><?php the_tags('', ''); ?></p><?php } ?>
-						
-						<div class="clear"></div>
 												
 						<div class="post-nav">
 													
