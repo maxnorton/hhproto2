@@ -9,6 +9,6 @@ function theme_enqueue_styles() {
 }
 
 // register theme widgets
-require_once (get_template_directory() . "/widgets/recent-posts.php");
+//require_once (get_template_directory() . "/widgets/recent-posts.php");
 
 ?>
