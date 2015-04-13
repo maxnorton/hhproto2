@@ -207,7 +207,12 @@
 	margin-top: 157px; /*add 57px*/
 }
 
-.hhproto2-widget-list .post-icon img {
-  display: block;
-  height:;
+/* Recent posts ---------------------------- */
+.hhproto2-widget-list .post-icon {
+	float: left;
+	height: 65px;
+	margin: 5px 15px 5px 0;
+	overflow: hidden;
+	width: 110px;
 }
+
