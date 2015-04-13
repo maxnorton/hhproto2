@@ -42,45 +42,43 @@ class hhproto2_recent_posts extends WP_Widget {
 					if ($recent_posts->have_posts()) :
 						
 						while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); ?>
-					
-						<li>
-						
-							<?php global $post; ?>
-						
-							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-																	
-									<?php 
-										$post_format = get_post_format(); 
-										if ( empty($post_format) ) { $post_format = 'standard'; }
 
-										if ( $post_format != 'aside') {
-									
-											if ( has_post_thumbnail() ) : ?>
-
-												<div class="post-icon">
+							<?php global $post;
 											
-													<?php the_post_thumbnail('thumbnail') ?>
-											
-												</div>
+							$post_format = get_post_format(); 
+							if ( empty($post_format) ) { $post_format = 'standard'; }
 
-											<?php endif;
+							if ( $post_format != 'aside') {
 
-										};
-									?>
-																	
-								<div class="inner">
+								<li>
+								
+									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+										
+										if ( has_post_thumbnail() ) : ?>
+
+											<div class="post-icon">
 												
-									<p class="title"><?php the_title(); ?></p>
-								
-								</div>
-								
-								<div class="clear"></div>
-													
-							</a>
-							
-						</li>
-					
-					<?php endwhile; ?>
+												<?php the_post_thumbnail('thumbnail') ?>
+												
+											</div>
+
+										<?php endif; ?>
+																					
+										<div class="inner">
+																
+											<p class="title"><?php the_title(); ?></p>
+												
+										</div>
+												
+										<div class="clear"></div>
+														
+									</a>
+											
+								</li>
+						
+						<?php };
+
+					endwhile; ?>
 			
 				</ul>
 				
