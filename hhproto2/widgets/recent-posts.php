@@ -53,9 +53,9 @@ class hhproto2_recent_posts extends WP_Widget {
 										$post_format = get_post_format(); 
 										if ( empty($post_format) ) { $post_format = 'standard'; }
 
-										if ( $post_format != 'aside') : ?>
+										if ( $post_format != 'aside') {
 									
-											<?php if ( has_post_thumbnail() ) : ?>
+											if ( has_post_thumbnail() ) : ?>
 
 												<div class="post-icon">
 											
@@ -65,7 +65,7 @@ class hhproto2_recent_posts extends WP_Widget {
 
 											<?php endif;
 
-										endif;
+										};
 									?>
 																	
 								<div class="inner">
