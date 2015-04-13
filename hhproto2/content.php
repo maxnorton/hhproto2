@@ -22,6 +22,42 @@
 				
 			</a>
 
+			<div class="header-over-image">
+
+			    <h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+			    
+			    <div class="post-meta">
+				
+					<span class="post-date"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_time(get_option('date_format')); ?></a></span>
+					
+					<span class="date-sep"> / </span>
+						
+					<span class="post-author"><?php the_author_posts_link(); ?></span>
+							
+					<?php if( is_sticky() && !has_post_thumbnail() ) { ?> 
+					
+						<span class="date-sep"> / </span>
+					
+						<?php _e('Sticky', 'hemingway'); ?>
+					
+					<?php } ?>
+					
+					<?php if ( current_user_can( 'manage_options' ) ) { ?>
+					
+						<span class="date-sep"> / </span>
+									
+						<?php edit_post_link(__('Edit', 'hemingway')); ?>
+					
+					<?php } ?>
+											
+				</div>
+
+			</div>
+	
+		</div> <!-- /featured-media -->
+			
+	<?php else : ?>
+
 		    <h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 		    
 		    <div class="post-meta">
@@ -49,38 +85,6 @@
 				<?php } ?>
 										
 			</div>
-	
-		</div> <!-- /featured-media -->
-			
-	<?php else : ?>
-
-	    <h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-	    
-	    <div class="post-meta">
-		
-			<span class="post-date"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_time(get_option('date_format')); ?></a></span>
-			
-			<span class="date-sep"> / </span>
-				
-			<span class="post-author"><?php the_author_posts_link(); ?></span>
-					
-			<?php if( is_sticky() && !has_post_thumbnail() ) { ?> 
-			
-				<span class="date-sep"> / </span>
-			
-				<?php _e('Sticky', 'hemingway'); ?>
-			
-			<?php } ?>
-			
-			<?php if ( current_user_can( 'manage_options' ) ) { ?>
-			
-				<span class="date-sep"> / </span>
-							
-				<?php edit_post_link(__('Edit', 'hemingway')); ?>
-			
-			<?php } ?>
-									
-		</div>
 
 	<?php endif; ?>
     
