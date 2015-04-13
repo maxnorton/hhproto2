@@ -48,7 +48,7 @@ class hhproto2_recent_posts extends WP_Widget {
 							$post_format = get_post_format(); 
 							if ( empty($post_format) ) { $post_format = 'standard'; }
 
-							if ( $post_format != 'aside') {
+							if ( $post_format != 'aside') { ?>
 
 								<li>
 								
