@@ -9,5 +9,13 @@ function theme_enqueue_styles() {
 }
 
 // register theme widgets
-//require_once (get_template_directory() . "/widgets/recent-posts-pretty.php");
+require_once (get_template_directory() . "/widgets/recent-posts.php");
+
+
+// Delist the default WordPress widgets replaced by custom theme widgets
+add_action('widgets_init', 'hhproto2_unregister_default_widgets', 11);
+ 
+function hhproto2_unregister_default_widgets() {
+	unregister_widget('WP_Widget_Recent_Comments');
+}
 ?>
