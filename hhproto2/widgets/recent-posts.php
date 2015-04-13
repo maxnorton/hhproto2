@@ -9,30 +9,26 @@ class hhproto2_recent_posts extends WP_Widget {
 	}
 
 }
-
-register_widget('hhproto2_recent_posts');
-
-/*
 	
 	function widget($args, $instance) {
 	
-		// Outputs the content of the widget
+		/*// Outputs the content of the widget
 		extract($args); // Make before_widget, etc available.
 		
 		$widget_title = null; 
 		$number_of_posts = null; 
 		
 		$widget_title = esc_attr(apply_filters('widget_title', $instance['widget_title']));
-		$number_of_posts = esc_attr($instance['number_of_posts']);
+		$number_of_posts = esc_attr($instance['number_of_posts']);*/
 		
 		echo $before_widget;
 		
 		
-		if (!empty($widget_title)) {
+		/*if (!empty($widget_title)) {
 		
 			echo $before_title . $widget_title . $after_title;
 			
-		} ?>
+		} /*?>
 		
 			<ul class="hhproto2-widget-list">
 				
@@ -116,7 +112,7 @@ register_widget('hhproto2_recent_posts');
 			
 				</ul>
 				
-			<?php endif; ?>
+			<?php endif; ?>*/
 					
 		<?php echo $after_widget; 
 	}
