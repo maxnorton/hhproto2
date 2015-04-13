@@ -206,3 +206,8 @@
 .fix-navigation > .wrapper {
 	margin-top: 157px; /*add 57px*/
 }
+
+.hhproto2-widget-list .post-icon img {
+  display: block;
+  height:;
+}
