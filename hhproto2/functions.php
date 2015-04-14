@@ -47,4 +47,14 @@ function hhproto2_turnoff_hemingway_title() {
 	remove_filter( 'wp_title', 'hemingway_wp_title', 10, 2);
 }
 
+// Generic wordpress-suggested function for defining page title on front page.
+add_filter( 'wp_title', 'baw_hack_wp_title_for_home' );
+function baw_hack_wp_title_for_home( $title )
+{
+  if( empty( $title ) && ( is_home() || is_front_page() ) ) {
+    return __( 'Home', 'theme_domain' ) . ' | ' . get_bloginfo( 'description' );
+  }
+  return $title;
+}
+
 ?>
