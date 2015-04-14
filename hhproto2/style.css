@@ -230,15 +230,15 @@
 .header-over-image {
 	background-color: #1D1D1D;
 	background-color: rgba(150,150,150,0.7);
-	bottom: 10px;
+	bottom: 0;
 	padding: 10px;
 	position: absolute;
 }
 
 .featured-media .header-over-image a,
 .featured-media .header-over-image .date-sep {
-	display: auto;
-	color: white;
+	display: inline-block;
+	color: black;
 }
 
 /* Little edits to the two-column layout ------------------- */
