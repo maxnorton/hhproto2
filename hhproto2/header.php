@@ -7,7 +7,7 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
 																		
-		<title><?php wp_title(); ?></title>
+		<title><?php wp_title(''); ?></title>
 				
 		<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
 		 
@@ -93,7 +93,7 @@
 						</div>
 
 						<div class="nav-post-title-wrap">
-							<h1 class="nav-post-title"><?php wp_title('|', true, 'right'); ?></h1>
+							<h1 class="nav-post-title"><?php wp_title(''); ?></h1>
 						</div>
 						
 						<div class="search-toggle toggle">
