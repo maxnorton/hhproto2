@@ -241,3 +241,18 @@
 	color: white;
 }
 
+/* Little edits to the two-column layout ------------------- */
+.content {
+	width: 69%;
+}
+
+.posts {
+	border-right: 4px solid #eee;
+	padding-right: 15px;
+}
+
+.post {
+	width: 94.2%;
+}
+
+
