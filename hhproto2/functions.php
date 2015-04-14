@@ -42,6 +42,6 @@ function hemingway_wp_title( $title, $sep ) {
 add_filter( 'wp_title', 'hemingway_wp_title', 10, 2 );*/
 
 // Disable Hemingway title filter
-remove_filter( 'wp_title', 'hemingway_wp_title', 11);
+remove_filter( 'wp_title', 'hemingway_wp_title', 9);
 
 ?>
