@@ -218,8 +218,10 @@
 }
 
 /* Recent posts ---------------------------- */
+.hhproto2-widget-list {
+	text-align: center;
+}
 .hhproto2-widget-list .post-icon {
-	float: left;
 	height: 65px;
 	margin: 5px 15px 5px 0;
 	overflow: hidden;
