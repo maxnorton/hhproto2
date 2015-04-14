@@ -41,7 +41,10 @@ function hemingway_wp_title( $title, $sep ) {
 }
 add_filter( 'wp_title', 'hemingway_wp_title', 10, 2 );*/
 
-// Disable Hemingway title filter
-remove_filter( 'wp_title', 'hemingway_wp_title', 10, 2);
+// Disable Hemingway title filter after Hemingway loads
+add_action( 'after_setup_theme', 'hhproto2_turnoff_hemingway_title');
+function hhproto2_turnoff_hemingway_title() {
+	remove_filter( 'wp_title', 'hemingway_wp_title', 10, 2);
+}
 
 ?>
