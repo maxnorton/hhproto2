@@ -293,8 +293,12 @@
 }
 
 /* Mobile menu --------------- */
-.mobile-menu li {
+.mobile-menu {
 	text-align: center;
 }
 
+.mobile-menu .widget-title {
+	margin-top: 20px;
+}
+}
 
