@@ -161,6 +161,8 @@
 							));
 							
 						} ?>
+
+						<?php the_widget( 'hhproto2_recent_posts' ); ?> 
 						
 					 </ul>
 				 
