@@ -226,6 +226,9 @@
 	font-weight: bold;
 	text-align: center;
 }
+.mobile-menu .hhproto2-widget-list a p {
+	color: rgba(255,255,255,0.4);
+}
 .hhproto2-widget-list .post-icon {
 	height: 100px;
 	margin: 15px auto;
@@ -287,6 +290,11 @@
 	position: relative;
 	top: -90px;
 	width: auto;
+}
+
+/* Mobile menu --------------- */
+.mobile-menu li {
+	text-align: center;
 }
 
 

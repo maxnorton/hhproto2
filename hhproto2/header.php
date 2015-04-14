@@ -160,6 +160,10 @@
 							
 						} ?>
 
+						<div class="widget-title">
+							<h3>Recent posts</h3>
+						</div>
+
 						<?php the_widget( 'hhproto2_recent_posts' ); ?> 
 						
 					 </ul>
