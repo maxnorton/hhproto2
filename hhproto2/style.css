@@ -209,6 +209,10 @@
 	margin-top: 157px; /*add 57px*/
 }
 
+.nav-toggle {
+	margin-left: 0;
+}
+
 /* Recent posts ---------------------------- */
 .hhproto2-widget-list .post-icon {
 	float: left;
