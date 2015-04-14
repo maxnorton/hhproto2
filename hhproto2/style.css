@@ -293,12 +293,14 @@
 }
 
 /* Mobile menu --------------- */
-.mobile-menu {
+.mobile-menu li{
 	text-align: center;
 }
 
-.mobile-menu .widget-title {
+.mobile-menu .widget-title h2 {
 	margin-top: 20px;
+	text-align: center;
+	font-weight: bold;
 }
 }
 
