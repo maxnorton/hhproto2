@@ -213,6 +213,10 @@
 	margin-left: 0;
 }
 
+.header {
+	bottom: 0 !important; /* Kill "cool" header image scroll js parallax crap */
+}
+
 /* Recent posts ---------------------------- */
 .hhproto2-widget-list .post-icon {
 	float: left;
