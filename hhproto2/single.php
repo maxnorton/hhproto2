@@ -129,9 +129,7 @@
 						</div> <!-- /post-nav -->
 											
 					</div> <!-- /post-meta-bottom -->
-					
-					<?php comments_template( '', true ); ?>
-												                        
+																	                        
 			   	<?php endwhile; else: ?>
 			
 					<p><?php _e("We couldn't find any posts that matched your query. Please try again.", "hemingway"); ?></p>
