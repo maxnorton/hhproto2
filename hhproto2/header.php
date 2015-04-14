@@ -57,9 +57,9 @@
 							<div class="blog-info">
 							
 								<div class="face">
-									<img src="<?php echo get_stylesheet_directory_uri() . '/images/heidi-new-shot.jpg' ?>" />
+									<img src="<?php echo get_stylesheet_directory_uri() . '/images/heidi-new-shot.png' ?>" />
 								</div>
-						
+
 								<h1 class="blog-title">
 									<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a>
 								</h1>
