@@ -221,6 +221,11 @@
 .hhproto2-widget-list {
 	text-align: center;
 }
+.hhproto2-widget-list a p {
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+}
 .hhproto2-widget-list .post-icon {
 	height: 65px;
 	margin: 5px 15px 5px 0;
