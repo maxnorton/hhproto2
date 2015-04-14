@@ -42,6 +42,10 @@
 							
 					<div class="header-inner section-inner">
 					
+						<div class="face">
+							<img src="<?php echo get_stylesheet_directory_uri() . '/images/heidi-new-shot.jpg' ?>" />
+						</div>
+
 						<?php if ( get_theme_mod( 'hemingway_logo' ) ) : ?>
 						
 							<div class='blog-logo'>
