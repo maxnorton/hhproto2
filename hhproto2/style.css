@@ -227,12 +227,17 @@
 }
 
 /* Post titles overlaid on featured images ----------------- */
+.featured-media {
+	width: 100%;
+}
+
 .header-over-image {
-	background-color: #1D1D1D;
-	background-color: rgba(150,150,150,0.7);
+	background-color: #DDD;
+	background-color: rgba(200,200,200,0.7);
 	bottom: 0;
 	padding: 10px;
 	position: absolute;
+	width: 100%;
 }
 
 .featured-media .header-over-image a,
