@@ -227,10 +227,15 @@
 	text-align: center;
 }
 .hhproto2-widget-list .post-icon {
-	height: 65px;
+	height: 100px;
 	margin: 15px auto;
 	overflow: hidden;
-	width: 110px;
+	width: 200px;
+	border: 2px solid #1d1d1d;
+}
+.hhproto2-widget-list .post-icon img {
+	width: 200px;
+	height: auto;
 }
 
 /* Post titles overlaid on featured images ----------------- */
