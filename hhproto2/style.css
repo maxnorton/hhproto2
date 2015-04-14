@@ -260,4 +260,20 @@
 	width: 94.2%;
 }
 
+/* Header stuff ------------------- */
+.face {
+	display: inline-block;
+	position: relative;
+	background: #ccc;
+	padding: 15px;
+	border-radius: 121px;
+}
+
+.blog-title {
+	display: inline-block;
+	padding-left: 20px;
+	position: relative;
+	top: -90px;
+}
+
 
